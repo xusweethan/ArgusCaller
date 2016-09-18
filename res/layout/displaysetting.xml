@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Switch
+        android:id="@+id/Full_Screen_Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Screen Mode" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/Incoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incoming" />
+
+    <CheckBox
+        android:id="@+id/Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call" />
+
+    <CheckBox
+        android:id="@+id/Misscall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misscall" />
+
+    <CheckBox
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message" />
+
+    <Switch
+        android:id="@+id/Easy_Incoming_Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy Incoming Mode" />
+
+    <Switch
+        android:id="@+id/Notification_Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Bar" />
+
+</LinearLayout>

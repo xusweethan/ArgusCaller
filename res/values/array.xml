@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hobby">  
+        <item>I\'ve read and understood app description</item>  
+        <item>I understand that developer can\'t respond to comments in the Play Store</item>  
+        <item>I understand that developer is not responsible for the use of the program</item>  
+    </string-array>  
+    
+</resources>

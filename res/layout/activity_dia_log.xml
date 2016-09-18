@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ButtonStyle" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Responsibilities stated"
+        android:textColor="#070707"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_declare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox_declare"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/declare"
+        android:textColor="#a46a40"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_declare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_declare"
+        android:layout_alignLeft="@+id/tv_declare"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:checked="false"
+        android:text="我已阅读此协议"
+        android:textColor="#778389" />
+
+    <LinearLayout
+        android:id="@+id/linear_declare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#3399cc"
+            android:text="退出"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_affirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#0cf52c"
+            android:text="确认"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:fadingEdge="none"
+        android:dividerHeight="2dp"
+        android:scrollingCache="false" >
+    </ListView>
+     <ImageView 
+     android:id="@+id/wenhao"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/aaaaa"
+     android:layout_centerInParent="true"
+     android:visibility="invisible"
+     />
+ <TextView 
+     android:id="@+id/noRecord"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:visibility="invisible"
+     android:layout_centerInParent="true"
+     android:layout_below="@+id/wenhao"
+     />
+</RelativeLayout>

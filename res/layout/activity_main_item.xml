@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription" >
+
+  
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/call_type1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_cloud1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/taps" />
+
+    <TextView
+        android:id="@+id/tv_length1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_cloud1"
+        android:layout_alignRight="@+id/image_cloud1"
+        android:layout_below="@+id/image_cloud1"
+        android:gravity="center"
+        android:text="00:00" />
+
+    <ImageView
+        android:id="@+id/image_clock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_length1"
+        android:layout_alignTop="@+id/tv_length1"
+        android:layout_toLeftOf="@+id/tv_length1"
+        android:scaleType="fitEnd"
+        android:src="@drawable/voice" />
+
+    <TextView
+        android:id="@+id/tv_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/image_clock1"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:id="@+id/call_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/call"
+        android:scaleType="fitStart" />
+
+</RelativeLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewSize,HardcodedText,SpUsage,ContentDescription" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/relative_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000099" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jiantou" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/back"
+                android:text="Recording Settings"
+                android:textColor="@android:color/white"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recordingmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_set"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Recording Mode"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recordingmode"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/recordingmode"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/radio"
+                android:text="Voice_Call"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/radio"
+                android:text="MIC"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/RecordingPath"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/catalog"
+            android:layout_below="@+id/radioGroup1"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/RecordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Recording Path"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/filepath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RecordText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#a1a1a1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:layout_below="@+id/filepath"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="#a1a1a1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/TotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/catalog"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Total Space Ocuupied"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/catalog"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="/"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/FilesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TotalText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Total Files"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/MB"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="/"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/catalog2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:layout_below="@+id/size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#a1a1a1"
+            android:gravity="center"
+            android:paddingLeft="8dip" />
+
+        <RelativeLayout
+            android:id="@+id/relative_set2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/catalog2" >
+
+            <!--
+                 <ImageView
+                android:id="@+id/update"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/data" />
+            -->
+
+            <TextView
+                android:id="@+id/LimitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/update"
+                android:text="Limit Memory Usage"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/mTogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/kaiguan"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_set2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Space Usage"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relative_set2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/space"
+            android:popupBackground="@android:color/black"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/spinnerbottom2"
+            android:layout_width="130dp"
+            android:layout_height="0.1sp"
+            android:layout_alignBottom="@+id/spinner2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="#000000" />
+
+        <ImageButton
+            android:id="@+id/run1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerbottom2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/runcleanup5" />
+    </RelativeLayout>
+
+</ScrollView>

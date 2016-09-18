@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent" >
+
+
+        <ImageView
+            android:id="@+id/call_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/call"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/call_type2"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:id="@+id/tv_biaoQian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/image_clock2"
+            android:src="@drawable/nomal"
+             />
+
+        <ImageView
+            android:id="@+id/image_clock2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_length2"
+            android:layout_alignTop="@+id/tv_length2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_length2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/voice" />
+
+        <TextView
+            android:id="@+id/tv_length2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/image_suo"
+            android:text="00:00" />
+
+        <ImageView
+            android:id="@+id/image_suo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/smalllock" 
+           android:visibility="invisible"
+            />
+  
+
+</RelativeLayout>

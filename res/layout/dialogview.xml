@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/dial_relTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A94F9" >
+
+        <TextView
+            android:id="@+id/dial_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="Please select the label type"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/dial_Cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/canceltor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dial_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dial_relTitle"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/dial_n"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/nomal" />
+
+        <TextView
+            android:id="@+id/dial_green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dial_n"
+            android:text="Set this record as a common tape recorder"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dial_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dial_relative1"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/dial_i"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/inprotant" />
+
+        <TextView
+            android:id="@+id/dial_red1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dial_i"
+            android:text="Set this recording as an important recording"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dial_relative3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dial_relative2"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/dial_u"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/urgent" />
+
+        <TextView
+            android:id="@+id/dial_yellow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dial_u"
+            android:text="Set this recording as an emergency recording"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_personal.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_main_item.xml" />
+        <ignore path="res/layout/activity_personal.xml" />
+        <ignore path="res/layout/activity_personal_item.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables">
+        <ignore path="res/layout/activity_main_item.xml" />
+        <ignore path="res/layout/activity_personal_item.xml" />
+    </issue>
+</lint>
